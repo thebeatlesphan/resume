@@ -1,0 +1,53 @@
+/* basic elements */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 75% georgia, sans-serif;
+    line-height: 1.88889;
+    color: #55753;
+    margin: 0;
+    padding: 0;
+}
+.leftphoto {
+    border: 1px solid #ddd;
+    width: 150px;
+    margin-left: 24px;
+    margin-top: 0;
+}
+
+
+
+/*
+INTRO
+*/
+.flex-intro{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: grey;
+}
+#introword {
+	font-family: "Montez", cursive;
+	font-size: 82px;
+}
+.nav-intro {
+	display: flex;
+	flex-direction: row;
+	grid-gap: 65px;
+	justify-content: center;
+	align-content: center;
+	font-size: 32px;
+	text-decoration: none;
+}
+.nav-about:visited, .nav-projects:visited, .nav-art:visited, .nav-blog:visited,
+.nav-about:hover, .nav-projects:hover, .nav-art:hover, .nav-blog:hover,
+.nav-about:link, .nav-projects:link, .nav-art:link, .nav-blog:link,
+.nav-about:active, .nav-projects:active, .nav-art:active, .nav-blog:active{
+	color: inherit;
+	text-decoration: none;
+}
