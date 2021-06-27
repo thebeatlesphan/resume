@@ -57,28 +57,21 @@ INTRO
 	width: 100vw;
 }
 #introword {
-	font-family: "Montez", cursive;
-	font-size: 102px;
+	font-family: "Nothing You Could Do", cursive;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 0;
 	text-align: center;
 }
-.nav-intro {
-	display: flex;
-	flex-direction: row;
-	grid-gap: 65px;
-	justify-content: center;
-	font-size: 32px;
-	text-decoration: none;
-
-}
-.nav-about:visited, .nav-projects:visited, .nav-art:visited, .nav-blog:visited, .nav-interviews:visited,
-.nav-about:hover, .nav-projects:hover, .nav-art:hover, .nav-blog:hover, .nav-interviews:hover,
-.nav-about:link, .nav-projects:link, .nav-art:link, .nav-blog:link, .nav-interviews:link,
-.nav-about:active, .nav-projects:active, .nav-art:active, .nav-blog:active, .nav-interviews:active {
+.introword:visited, .introword:hover, .introword:link, .introword:active {
 	color: inherit;
 	text-decoration: none;
-	font-family: "Montez", cursive;
-	font-size: 52px;
+	font-size: 400px !important;
+	font-family: "Nothing You Could Do", cursive;
+}
+.developer {
+	display: flex;
+	justify-content: center;
+	font-family: "Raleway", sans-serif;
+	font-size: 75px;
+	border-style: double;
 }
