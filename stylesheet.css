@@ -27,7 +27,7 @@ body {
 	text-decoration: none;
 }
 .header-content{
-	padding-top: 110px;
+	/*padding-top: 110px;*/
 }
 
 /*
@@ -80,26 +80,4 @@ INTRO
 	border-style: double;
 	border-color: black;
 	border-width: 11px;
-}
-/*
-hamburger dropbtn
-*/
-.navbar {
-	position: fixed;
-	top: 0px;
-	height: 100px;
-	width: 100%;
-	background-color: white;
-}
-.hamburger {
-	height: 100px;
-	width: 100px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	background-color: lightblue;
-}
-
-.body-about {
-	height: 10000px;
 }
