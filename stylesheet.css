@@ -14,8 +14,11 @@
 	letter-spacing: 3px;
 	font-style: italic;
 }
-#longfellow p {
+.longfellow p {
 	margin: 0;
+	font-weight: 700;
+	font-style: italic;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .stanza-1 :first-child {
 	text-indent: 10%;
@@ -26,4 +29,9 @@
 }
 #stanza-2 {
 	font-style: italic;
+}
+#turtle {
+	background-image: url(images/tree.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
