@@ -10,28 +10,22 @@
 	font-size: 180px; 
 	font-weight: bolder;
 }
-#name {
+#navbar-title {
 	letter-spacing: 3px;
 	font-style: italic;
 }
-.longfellow p {
+#longfellow p {
 	margin: 0;
-	font-weight: 700;
-	font-style: italic;
+	font-weight: 800;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-.stanza-1 :first-child {
-	text-indent: 10%;
 }
 .stanza-1 :last-child {
 	text-indent: 5%;
 	margin-bottom: 7px !important;
-}
+} 
 #stanza-2 {
 	font-style: italic;
 }
-#turtle {
-	background-image: url(images/tree.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+#projects {
+	border-width: 800px;
 }
