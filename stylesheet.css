@@ -13,11 +13,12 @@
 #navbar-title {
 	letter-spacing: 3px;
 	font-style: italic;
+	font-size: 21px;
 }
 #longfellow p {
 	margin: 0;
-	font-weight: 800;
-	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	/* font-weight: 800; */
+	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 .stanza-1 :last-child {
 	text-indent: 5%;
