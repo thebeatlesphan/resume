@@ -16,8 +16,8 @@
 
 	<!-- NAVIGATION -->
 	<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
-				<div class="container">
+			<nav>
+				<div class="container navbar navbar-dark bg-dark">
 					<a class="navbar-brand" id="navbar-title">Andrews Nguyen-Phan</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
 						<span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
 							</li>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Contact</a>
+								<a class="nav-link" href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -45,13 +45,12 @@
 			</nav>
 	</header>
 	<body class="body-about">
-
 		<!-- POEM -->
 		<section>
 			<div id="longfellow"> 
 				<div class="container">
 					<div class="d-lg-flex justify-content-center align-items-center">
-						<div class="text-center">
+						<div class="text-center border border-dark mb-3 mt-3 p-4">
 							<div class="stanza-1">
 								<p>When I compare</p>
 								<p>What I have lost with what I have gained,</p> 
@@ -82,10 +81,8 @@
 		</section>
 
 		<!-- PROJECTS -->
-		<section class="container-fluid bg-dark mt-2 mb-4">
-			<div class="row justify-content-center">
-				<h2 class="text-center text-light" id="projects">PROJECTS</h2>
-			</div>
+		<section class="container bg-dark mb-3">
+			<h2 class="text-center text-light" id="projects">PROJECTS</h2>
 		</section>
 
 		<!-- PROJECTS LISTING -->
@@ -99,15 +96,21 @@
 							<p class="card-text">Focused on basic HTML and CSS fundamentals such as applying correct html (head, body, nav, ul, div, section, and footer) 
 								tags and applying CSS (margin, padding, sizing, display, and pseudo-class) attributes to them. The goal was to create a pixel-perfect non-responsive 
 								clone.  </p>
-							<img class="card-img-bottom" src="..." alt="...">
+							<div class="card-body p-0 text-center">
+								<a href="https://github.com/thebeatlesphan/AppleClone" class="btn btn-secondary" target="_blank">Github</a>
+								<a href="https://thebeatlesphan.github.io/AppleClone/" class="btn btn-secondary" target="_blank">Preview</a>
+							</div>
 						</div>
 					</div>
 					<div class="card col-md-5 border border-dark" id="airbnb-clone">
-						<div class="card-body">
+						<div class="card-body d-flex flex-column">
 							<h5 class="card-title text-center">Airbnb Clone</h5>
 							<h6 class="card-subtitle mb-2 text-muted text-center">HTML CSS Bootstrap</h6>
 							<p class="card-text">Responsive bootstrap clone of the AirBnb front page. Focused on learning bootstrap classes with custom edits in CSS.</p>
-							<img class="card-img-bottom" src="..." alt="...">
+							<div class="card-body p-0 align-self-end">
+								<a href="https://thebeatlesphan.github.io/AirBnb-Clone/" class="btn btn-secondary" target="_blank">Github</a>
+								<a href="https://thebeatlesphan.github.io/AirBnb-Clone/" class="btn btn-secondary" target="_blank">Preview</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -117,7 +120,10 @@
 							<h5 class="card-title text-center">Blog and Art Gallery</h5>
 							<h6 class="card-subtitle mb-2 text-muted text-center">HTML CSS Bootstrap</h6>
 							<p class="card-text">Personal project that sought to apply concepts learned from the AirBnb project to implement more advanced bootstrap components.</p>
-							<img class="card-img-bottom" src="..." alt="...">
+							<div class="card-body p-0 text-center">
+								<a href="https://github.com/thebeatlesphan/AppleClone" class="btn btn-secondary" target="_blank">Github</a>
+								<a href="https://thebeatlesphan.github.io/AppleClone/" class="btn btn-secondary" target="_blank">Preview</a>
+							</div>
 						</div>
 					</div>
 					<div class="card col-md-5 border border-dark" id="2d-predator-prey">
@@ -127,7 +133,10 @@
 							<p class="card-text">Pure Java program that displays an ASCII simulation in the terminal. Focused on learning important object oriented programming and 
 								data structure concepts (polymorphism, inheritance, encapsulation, and arrays). Predator and prey are initially generated on a 200x200 grid and the 
 								user presses a key to move forward in time. Each organism performs one action (move, devour, or breed) a turn.</p>
-							<img class="card-img-bottom" src="..." alt="...">
+							<div class="card-body p-0 text-center">
+								<a href="https://github.com/thebeatlesphan/PredatorPrey" class="btn btn-secondary" target="_blank">Github</a>
+								<!-- <a href="https://thebeatlesphan.github.io/AppleClone/" class="btn btn-secondary" target="_blank">Preview</a> -->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -139,7 +148,10 @@
 							<p class="card-text">Pure Java program that implements a first-order Markov chain to determine which language a document is. Focused on learning 
 								implementation of Java classes, 2-D arrays, simple text processing, and basic numerical computing. The user feeds the program corpus files to study 
 								letter frequencies for a specific language and utilizes that to calculate the likelihood of which language the new string / file is.</p>
-							<img class="card-img-bottom" src="..." alt="...">
+							<div class="card-body p-0 text-center">
+								<a href="https://github.com/thebeatlesphan/Java-Book" class="btn btn-secondary" target="_blank">Github</a>
+								<!-- <a href="https://thebeatlesphan.github.io/AppleClone/" class="btn btn-secondary" target="_blank">Preview</a> -->
+							</div>
 						</div>
 					</div>
 					<div class="card col-md-5 border border-dark" id="histogram">
@@ -147,7 +159,10 @@
 							<h5 class="card-title text-center">Histogram</h5>
 							<h6 class="card-subtitle mb-2 text-muted text-center">Java</h6>
 							<p class="card-text">Pure Java program that parses name:value csv files and generates the data into the terminal. User dictates how many bins will be displayed.</p>
-							<img class="card-img-bottom" src="..." alt="...">
+							<div class="card-body p-0 text-center">
+								<a href="https://github.com/thebeatlesphan/Java-Book" class="btn btn-secondary" target="_blank">Github</a>
+								<!-- <a href="https://thebeatlesphan.github.io/AppleClone/" class="btn btn-secondary" target="_blank">Preview</a> -->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -156,8 +171,8 @@
 
 		<!-- CONTACT -->
 		<section>
-			<div class="container-fluid bg-dark mt-2 mb-2">
-				<h2 class="text-light text-center">CONTACT</h2>
+			<div class="container bg-dark mt-2 mb-2">
+				<h2 class="text-light text-center" id="contact">CONTACT</h2>
 			</div>
 			<div class="container" style="height: 14px;">
 				<div class="col-12 row justify-content-center">
@@ -169,11 +184,13 @@
 			</div>
 
 		</section>
+		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	</body>
+
 	<footer>
-		<section class="bg-dark text-light text-center">
-			<div class="container">
+		<section class="container bg-dark text-light text-center">
+			<div>
 				this is the footer
 			</div>
 		</section>
