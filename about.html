@@ -16,7 +16,7 @@
 
 	<!-- NAVIGATION -->
 	<header>
-			<nav>
+			<nav class="container-fluid bg-secondary">
 				<div class="container navbar navbar-dark bg-dark">
 					<a class="navbar-brand" id="navbar-title">Andrews Nguyen-Phan</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -25,19 +25,19 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ms-auto">
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Projects</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#apple-clone">Apple Clone</a></li>
-									<li><a class="dropdown-item" href="#airbnb-clone">Airbnb Clone</a></li>
-									<li><a class="dropdown-item" href="#blog-art-gallery">Blog and Art Gallery</a></li>
-									<li><a class="dropdown-item" href="#2d-predator-prey">2D Predator Prey Simulation</a></li>
-									<li><a class="dropdown-item" href="#natural-language-processor">Natural Language Processor</a></li>
-									<li><a class="dropdown-item" href="#histogram">Histogram</a></li>
+								<a class="nav-link dropdown-toggle" id="nav-projects" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Projects</a>
+								<ul class="dropdown-menu" id="dropdown-menu">
+									<li><a class="dropdown-item bg-light" href="#apple-clone">Apple Clone</a></li>
+									<li><a class="dropdown-item bg-light" href="#airbnb-clone">Airbnb Clone</a></li>
+									<li><a class="dropdown-item bg-light" href="#blog-art-gallery">Blog and Art Gallery</a></li>
+									<li><a class="dropdown-item bg-light" href="#2d-predator-prey">2D Predator Prey Simulation</a></li>
+									<li><a class="dropdown-item bg-light" href="#natural-language-processor">Natural Language Processor</a></li>
+									<li><a class="dropdown-item bg-light" href="#histogram">Histogram</a></li>
 								</ul>
 							</li>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#contact">Contact</a>
+								<a class="nav-link" id="nav-contacts" href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -49,7 +49,7 @@
 		<section>
 			<div id="longfellow"> 
 				<div class="container">
-					<div class="d-lg-flex justify-content-center align-items-center">
+					<div class="d-md-flex justify-content-center align-items-center" id="poem">
 						<div class="text-center border border-dark mb-3 mt-3 p-4">
 							<div class="stanza-1">
 								<p>When I compare</p>
@@ -74,15 +74,17 @@
 								<p>Loss and Gain</p>
 							</div>
 						</div>
-						<img class="d-none d-lg-block" src="images/Tree with root.jpg" class="img-fluid w-75" alt="black and white photo of two trees">
+						<img class="d-none d-md-block ml-10" src="images/psyduck.jpg" id="psyduck" alt="yellow psyduck">
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- PROJECTS -->
-		<section class="container bg-dark mb-3">
-			<h2 class="text-center text-light" id="projects">PROJECTS</h2>
+		<section class="container-fluid bg-secondary">
+			<div class="container bg-dark mb-3">
+				<h2 class="text-center text-light" id="projects">PROJECTS</h2>
+			</div>
 		</section>
 
 		<!-- PROJECTS LISTING -->
@@ -107,7 +109,7 @@
 							<h5 class="card-title text-center">Airbnb Clone</h5>
 							<h6 class="card-subtitle mb-2 text-muted text-center">HTML CSS Bootstrap</h6>
 							<p class="card-text">Responsive bootstrap clone of the AirBnb front page. Focused on learning bootstrap classes with custom edits in CSS.</p>
-							<div class="card-body p-0 align-self-end">
+							<div class="card-bottom p-0 mt-auto text-center">
 								<a href="https://thebeatlesphan.github.io/AirBnb-Clone/" class="btn btn-secondary" target="_blank">Github</a>
 								<a href="https://thebeatlesphan.github.io/AirBnb-Clone/" class="btn btn-secondary" target="_blank">Preview</a>
 							</div>
@@ -116,11 +118,11 @@
 				</div>
 				<div class="row row-col-md-2 gap-4 mb-4 justify-content-center">
 					<div class="card col-md-5 border border-dark" id="blog-art-gallery">
-						<div class="card-body">
+						<div class="card-body d-flex flex-column">
 							<h5 class="card-title text-center">Blog and Art Gallery</h5>
 							<h6 class="card-subtitle mb-2 text-muted text-center">HTML CSS Bootstrap</h6>
 							<p class="card-text">Personal project that sought to apply concepts learned from the AirBnb project to implement more advanced bootstrap components.</p>
-							<div class="card-body p-0 text-center">
+							<div class="card-bottom p-0 mt-auto text-center">
 								<a href="https://github.com/thebeatlesphan/AppleClone" class="btn btn-secondary" target="_blank">Github</a>
 								<a href="https://thebeatlesphan.github.io/AppleClone/" class="btn btn-secondary" target="_blank">Preview</a>
 							</div>
@@ -155,11 +157,11 @@
 						</div>
 					</div>
 					<div class="card col-md-5 border border-dark" id="histogram">
-						<div class="card-body">
+						<div class="card-body d-flex flex-column">
 							<h5 class="card-title text-center">Histogram</h5>
 							<h6 class="card-subtitle mb-2 text-muted text-center">Java</h6>
 							<p class="card-text">Pure Java program that parses name:value csv files and generates the data into the terminal. User dictates how many bins will be displayed.</p>
-							<div class="card-body p-0 text-center">
+							<div class="card-bottom p-0 text-center mt-auto">
 								<a href="https://github.com/thebeatlesphan/Java-Book" class="btn btn-secondary" target="_blank">Github</a>
 								<!-- <a href="https://thebeatlesphan.github.io/AppleClone/" class="btn btn-secondary" target="_blank">Preview</a> -->
 							</div>
@@ -169,7 +171,7 @@
 			</div>
 		</section>
 
-		<!-- CONTACT -->
+		<!-- CONTACT
 		<section>
 			<div class="container bg-dark mt-2 mb-2">
 				<h2 class="text-light text-center" id="contact">CONTACT</h2>
@@ -183,15 +185,17 @@
 				</div>
 			</div>
 
-		</section>
+		</section> -->
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	</body>
 
 	<footer>
-		<section class="container bg-dark text-light text-center">
-			<div>
-				this is the footer
+		<section class="container-fluid bg-secondary">
+			<div class="container bg-dark">
+				<div class="col-12">
+					<p id="last-logo" class="text-light">ap</p>
+				</div>
 			</div>
 		</section>
 	</footer>

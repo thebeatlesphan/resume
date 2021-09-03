@@ -33,4 +33,20 @@
 #contact {
 	font-style: italic;
 }
-
+#nav-projects {
+	text-align: right;
+}
+#dropdown-menu li a {
+	text-align: right !important;
+}
+#nav-contacts {
+	text-align: right;
+}
+#psyduck {
+	height: 600px;
+	width: 333.333px;
+	margin-left: 8px;
+}
+#last-logo {
+	font-family:Nothing You Could Do; 
+}
