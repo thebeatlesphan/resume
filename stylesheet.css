@@ -1,7 +1,5 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+	background-color: #FAEBCB;
 }
 .titleword {
 	color: inherit;
@@ -15,24 +13,6 @@
 	font-style: italic;
 	font-size: 21px;
 }
-#longfellow p {
-	margin: 0;
-	/* font-weight: 800; */
-	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-}
-.stanza-1 :last-child {
-	text-indent: 5%;
-	margin-bottom: 7px !important;
-} 
-#stanza-2 {
-	font-style: italic;
-}
-#projects {
-	font-style: italic;
-}
-#contact {
-	font-style: italic;
-}
 #nav-projects {
 	text-align: right;
 }
@@ -41,11 +21,6 @@
 }
 #nav-contacts {
 	text-align: right;
-}
-#psyduck {
-	height: 600px;
-	width: 333.333px;
-	margin-left: 8px;
 }
 #last-logo {
 	font-family:Nothing You Could Do; 
