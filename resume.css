@@ -1,11 +1,20 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
+.stars {
+  position: fixed;
+  background-attachment: scroll;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.15;
+  z-index: -1;
+}
+
 .container {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 40px;
@@ -36,71 +45,64 @@
   padding-left: 1rem;
 }
 
-.main-nav ul {
-  display: flex;
-  list-style: none;
-}
-
 .main-nav ul li a {
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.2rem;
 }
 
+/* hamburger */
+#nav-icon {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#nav-icon span {
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  user-select: none;
+  background-color: black;
+  border-radius: 5rem;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 15px;
+}
+#nav-icon span:nth-child(2) {
+  top: 30px;
+}
+#nav-icon span:nth-child(3) {
+  top: 45px;
+}
+
 /* title */
 .intro {
   white-space: nowrap;
   text-align: center;
-  height: calc(100vh - 85px);
+  height: calc(60vh - 85px);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title {
   transform: translateY(-10vh);
 }
 
 .title h1 {
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .title h2 {
   font-size: 1.1rem;
   font-style: italic;
+  letter-spacing: 1px;
 }
 
-/* hamburger */
-#burger {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-#nav-icon {
-  width: 50px;
-  margin: 0 auto;
-}
-
-#nav-icon span {
-  background-color: black;
-  height: 4px;
-  width: 100%;
-  display: block;
-  position: relative;
-  border-radius: 9px;
-}
-
-#nav-icon span:nth-child(1) {
-  top: 0px;
-}
-#nav-icon span:nth-child(2) {
-  top: 9px;
-}
-#nav-icon span:nth-child(3) {
-  top: 18px;
-}
-
-#nav-icon span:hover {
-  color: black;
-}
 /* overlay */
 #overlay {
   height: 0;
@@ -113,7 +115,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: rgba(224, 222, 105, 1);
+  background-color: rgba(235, 184, 5, 255);
   transition: 0.5s;
 }
 
@@ -146,4 +148,12 @@
 #close:hover {
   color: black;
   transform: scale(1.15);
+}
+
+/* projects */
+
+.showcase {
+  height: 400px;
+  width: 400px;
+  background-color: black;
 }
