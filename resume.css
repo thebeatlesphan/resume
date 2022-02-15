@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Poppins", sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* navigation */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+.brand-logo {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.logo {
+  font-family: Nothing You Could do;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.logo-name {
+  padding-left: 1rem;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
+
+/* title */
+.intro {
+  white-space: nowrap;
+  text-align: center;
+  height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-10vh);
+}
+
+.title h1 {
+  font-size: 1.5rem;
+}
+
+.title h2 {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* hamburger */
+#burger {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#nav-icon {
+  width: 50px;
+  margin: 0 auto;
+}
+
+#nav-icon span {
+  background-color: black;
+  height: 4px;
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 9px;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+#nav-icon span:nth-child(2) {
+  top: 9px;
+}
+#nav-icon span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon span:hover {
+  color: black;
+}
+/* overlay */
+#overlay {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(224, 222, 105, 1);
+  transition: 0.5s;
+}
+
+#topics {
+  width: 100%;
+}
+
+#overlay div a {
+  display: flex;
+  text-decoration: none;
+  font-size: 4rem;
+  color: white;
+  justify-content: center;
+}
+
+#overlay div a:hover {
+  transform: scale(1.15);
+  color: black;
+}
+
+#close {
+  color: white;
+  top: 1.3rem;
+  right: 3rem;
+  position: absolute;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#close:hover {
+  color: black;
+  transform: scale(1.15);
+}
