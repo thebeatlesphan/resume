@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
       rel="stylesheet"
     />
@@ -23,43 +19,79 @@
     <title>Resume 2.0</title>
   </head>
   <div>
-    <img src="../resume/images/endless-constellation.svg" class="stars">
+    <img src="../resume/images/endless-constellation.svg" class="stars" />
   </div>
-  <body class="container">
-    <header class="main-header">
-      <a href="#" class="brand-logo">
-        <div class="logo">AP</div>
-        <div class="logo-name"></div>
-      </a>
-      <nav class="main-nav" id="burger">
-        <div id="nav-icon" onclick="openNav()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <a href="#" class="brand-logo">
+          <div class="logo">AP</div>
+          <div class="logo-name"></div>
+        </a>
+        <nav class="main-nav" id="burger">
+          <div id="nav-icon" onclick="openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
 
-    <section class="intro">
-      <div class="title">
-        <h1>ANDREWS NGUYEN-PHAN</h1>
-        <h2>software engineer</h2>
-      </div>
-    </section>
+      <section class="intro">
+        <div class="title">
+          <h1>ANDREWS NGUYEN-PHAN</h1>
+          <h2>software engineer</h2>
+        </div>
+      </section>
+
+      <section id="overlay" onclick="closeNav()">
+        <div id="close">X</div>
+        <div id="topics">
+          <a href="#projects">projects</a>
+          <a href="#contact">contact</a>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section class="projects" id="projects">
+        <h2>projects</h2>
+        <div class="showcase">
+          <div class="left"></div>
+          <div class="right"></div>
+          <div class="center"></div>
+        </div>
+
+        <div class="showcase">
+          <div class="right"></div>
+          <div class="left"></div>
+          <div class="center"></div>
+        </div>
+
+        <div class="showcase">
+          <div class="left"></div>
+          <div class="right"></div>
+          <div class="center"></div>
+        </div>
+      </section>
+    </div>
   </body>
 
-  <section id="overlay" onclick="closeNav()">
-    <div id="close">X</div>
-    <div id="topics">
-      <a href="#">projects</a>
-      <a href="#">contact</a>
+  <!-- contact -->
+  <footer class="contact" id="contact">
+    <div class="footer">
+      <div class="footer-logo">AP</div>
+      <div class="location">
+        <p>Atlanta, GA</p>
+        <p>aphanit@protonmail.com</p>
+      </div>
+      <div class="follow-us">
+        <p><a href="https://github.com/thebeatlesphan" target="_blank">Github</a></p>
+        <p><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
+        <p><a href="https://www.instagram.com/andysnotandy/?hl=en" target="_blank">Instagram</a></p>
+        <p><a href="https://www.facebook.com/andrews.phan/" target="_blank">Facebook</a></p>
+      </div>
     </div>
-  </section>
-
-  <section class="projects">
-    <h2>projects</h2>
-    <div class="showcase"></div>
-  </section>
+  </footer>
 
   <script src="script.js"></script>
 </html>
