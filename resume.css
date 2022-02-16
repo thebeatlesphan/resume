@@ -190,6 +190,19 @@
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
+.center.foodcart {
+  background: url(../resume/images/FoodCart.PNG) no-repeat center;
+  background-size: contain;
+}
+
+@media screen and (min-width: 600px) {
+  .display {
+    display: grid;
+    
+  }
+}
+
+
 /* contact */
 .footer {
   top: 0;

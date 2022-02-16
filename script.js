@@ -1,3 +1,4 @@
+//navigation menu
 function openNav() {
     document.getElementById("overlay").style.height = "100%";
 }
