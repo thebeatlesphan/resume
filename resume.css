@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -152,70 +154,67 @@
 }
 
 /* projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .projects h2 {
   font-size: 1rem;
   text-align: center;
-  margin-bottom: 0.6rem;
+  margin: 0.5rem 0;
 }
 
 .display {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-items: center;
-  gap: 1rem;
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .showcase {
   height: 10rem;
-  width: 100%;
-  display: flex;
+  width: 20rem;
+  flex: 0 0 auto;
   margin: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   position: relative;
   box-shadow: 0 5px 10px black;
-}
-
-.showcase:hover {
-  transform: scale(1.02);
-}
-
-.left {
-  background-color: azure;
-  width: 100%;
-  height: 100%;
-}
-
-.right {
-  background-color: pink;
-  width: 100%;
-  height: 100%;
+  border-radius: 0.2rem;
 }
 
 .center {
   position: absolute;
-  background-color: rgb(219, 215, 215);
   height: 90%;
   width: 90%;
   top: 5%;
   left: 5%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center:hover {
+  transform: scale(1.02);
+}
+
+.center p {
+  font-family: "Monserrat";
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
 }
 
 .center.foodcart {
-  background: url("./images/FoodCart.PNG");
-  background-size: contain;
+  background-color: #8a2b06;
 }
 
-@media screen and (min-width: 600px) {
-  .display {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-items: center;
-  }
-}
+@media screen and (min-width: 600px) {}
+
 
 /* contact */
 .footer {
