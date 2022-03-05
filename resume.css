@@ -168,10 +168,18 @@
 }
 
 .display {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border: 0.3rem solid black;
+  padding: 1rem;
+}
+
+.display::-webkit-scrollbar {
+  display: none
 }
 
 .showcase {
@@ -228,6 +236,7 @@
   font-family: "Lato", sans-serif;
   align-items: center;
   background-color: grey;
+  margin-top: 1rem;
 }
 
 .footer div {
