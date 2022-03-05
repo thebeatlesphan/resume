@@ -177,6 +177,10 @@
   box-shadow: 0 5px 10px black;
 }
 
+.showcase:hover {
+  transform: scale(1.02);
+}
+
 .left {
   background-color: azure;
   width: 100%;
@@ -201,7 +205,7 @@
 }
 
 .center.foodcart {
-  background: url(../resume/images/FoodCart.PNG) no-repeat center;
+  background: url("./images/FoodCart.PNG");
   background-size: contain;
 }
 
