@@ -38,14 +38,15 @@
     width: 8rem;
     background-color: pink;
     margin: 0.2rem;
-    border-radius: 0.1rem;
+    border-radius: 0.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
 }
 
-.showcase:hover {
+.showcase:hover,
+.showcase:active {
     transform: scale(1.1);
 }
 
