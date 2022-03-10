@@ -93,7 +93,7 @@
 .intro {
   white-space: nowrap;
   text-align: center;
-  height: calc(40vh - 85px);
+  height: calc(30vh - 85px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,6 +157,14 @@
   transform: scale(1.15);
 }
 
+/* about me */
+.about-me {
+  text-align: center;
+  margin: 0.8rem;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
 
 /* contact */
 .footer {
