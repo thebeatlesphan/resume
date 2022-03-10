@@ -12,7 +12,10 @@ h2 {
 }
 
 .display {
-    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
     padding: 0.2rem;
     display: flex;
     flex-wrap: wrap;
@@ -26,4 +29,76 @@ h2 {
     background-color: pink;
     margin: 0.2rem;
     border-radius: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.showcase:hover {
+    transform: scale(1.1);
+    animation: wobble 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+.foodcart {
+    background-color: maroon;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.discordbot {
+    background-color: rgb(46, 98, 175);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
+
+.python-scripts {
+    background-color: rgb(25, 118, 155);
+    color: rgb(230, 215, 87);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+}
+
+.ivondemand {
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+}
+
+.appleclone {
+    background-color: rgb(77, 74, 74);
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+}
+
+.natours {
+    background-color: #28b485;
+    font-family: "Lato", sans-serif;
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
 }
