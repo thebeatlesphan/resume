@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: none;
+
+  --header-bg-color: rgba(158, 158, 158, 0.342);
 }
 
 .stars {
@@ -16,6 +18,7 @@
   width: 100vw;
   opacity: 0.15;
   z-index: -1;
+  opacity: 0.04;
 }
 
 .stars img {
@@ -37,7 +40,7 @@
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  background-color: grey;
+  background-color: var(--header-bg-color);
 }
 
 .brand-logo {
@@ -153,76 +156,6 @@
   transform: scale(1.15);
 }
 
-/* projects */
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.projects h2 {
-  font-size: 1rem;
-  text-align: center;
-  margin: 0.5rem 0;
-}
-
-.display {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  border: 0.3rem solid black;
-  padding: 1rem;
-}
-
-.display::-webkit-scrollbar {
-  display: none
-}
-
-.showcase {
-  height: 10rem;
-  width: 20rem;
-  flex: 0 0 auto;
-  margin: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-  position: relative;
-  box-shadow: 0 5px 10px black;
-  border-radius: 0.2rem;
-}
-
-.center {
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  top: 5%;
-  left: 5%;
-  border-radius: 0.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center:hover {
-  transform: scale(1.02);
-}
-
-.center p {
-  font-family: "Monserrat";
-  font-size: 1.5rem;
-  color: white;
-  text-transform: uppercase;
-}
-
-.center.foodcart {
-  background-color: #8a2b06;
-}
-
-@media screen and (min-width: 600px) {}
-
 
 /* contact */
 .footer {
@@ -235,7 +168,7 @@
   padding: 0.1rem 0;
   font-family: "Lato", sans-serif;
   align-items: center;
-  background-color: grey;
+  background-color: var(--header-bg-color);
   margin-top: 1rem;
 }
 
