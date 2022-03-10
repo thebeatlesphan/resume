@@ -2,13 +2,22 @@
 
 
 .projects {
-    text-align: center;
+    text-align: left;
     font-family: "Poppins", sans-serif;
 }
 
-h2 {
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects h2 {
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid grey;
 }
 
 .display {
@@ -37,22 +46,6 @@ h2 {
 
 .showcase:hover {
     transform: scale(1.1);
-    animation: wobble 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes wobble {
-    0% {
-        transform: rotate(5deg);
-    }
-
-    50% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(5deg);
-    }
 }
 
 .foodcart {

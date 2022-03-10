@@ -6,8 +6,9 @@
   box-sizing: border-box;
   overflow-x: none;
 
-  --header-bg-color: rgba(8, 8, 8, 0.712);
+  --header-bg-color: rgb(73, 73, 73);
   --header-text-color: white;
+  --header-padding: 0 2rem;
 }
 
 .stars {
@@ -31,7 +32,7 @@
   font-family: "Lato", sans-serif;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 2rem;
   overflow-x: none;
 }
 
@@ -40,8 +41,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 3rem;
   background-color: var(--header-bg-color);
+  padding: var(--header-padding)
 }
 
 .brand-logo {
@@ -49,7 +51,6 @@
   text-decoration: none;
   font-size: 1.7rem;
   color: var(--header-text-color);
-  padding-left: 1rem;
 }
 
 .logo {
@@ -59,34 +60,33 @@
 }
 
 /* hamburger */
-.main-nav {
-  padding-right: 1rem;
-}
-
 #nav-icon {
   position: relative;
   height: 50px;
-  width: 50px;
+  width: 35px;
   cursor: pointer;
 }
 
 #nav-icon span {
   position: absolute;
   width: 100%;
-  height: 0.3rem;
+  height: 0.1rem;
   user-select: none;
   background-color: white;
   border-radius: 5rem;
 }
 
 #nav-icon span:nth-child(1) {
-  top: 7px;
+  top: 10px;
 }
 #nav-icon span:nth-child(2) {
-  top: 23px;
+  top: 17px;
 }
 #nav-icon span:nth-child(3) {
-  top: 38px;
+  top: 24px;
+}
+#nav-icon span:nth-child(4) {
+  top: 32px;
 }
 
 /* title */
@@ -171,7 +171,7 @@
   align-items: center;
   background-color: var(--header-bg-color);
   color: var(--header-text-color);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .footer div {
@@ -195,11 +195,14 @@
   color: var(--header-text-color);
 }
 
+
+
 @media screen and (min-width: 600px) {
   .footer {
     display: flex;
     flex-direction: row;
     align-items: top;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: var(--header-padding)
   }
 }
