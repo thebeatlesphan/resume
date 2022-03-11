@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-
 .projects {
   margin-top: 2rem;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .container-projects {
@@ -13,7 +11,6 @@
 }
 
 .projects h2 {
-  font-size: 1.1rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid grey;
