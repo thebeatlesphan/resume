@@ -1,27 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 .projects {
-    margin-top: 2rem;
-    text-align: left;
-    font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 
 .container-projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects h2 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.1rem solid grey;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid grey;
 }
 
 .display {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.showcase {
+  height: 8rem;
+  width: 18rem;
+  background-color: pink;
+  margin: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .display {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -30,10 +55,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
 
-}
-
-.showcase {
+  .showcase {
     height: 18rem;
     width: 18rem;
     background-color: pink;
@@ -46,33 +70,34 @@
     color: white;
     font-weight: bold;
     font-size: 2rem;
+  }
 }
 
 .showcase:hover,
 .showcase:active {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .foodcart {
-    background-color: maroon;
+  background-color: maroon;
 }
 
 .discordbot {
-    background-color: rgb(46, 98, 175);
+  background-color: rgb(46, 98, 175);
 }
 
 .python-scripts {
-    background-color: rgb(25, 118, 155);
+  background-color: rgb(25, 118, 155);
 }
 
 .ivondemand {
-    background-color: black;
+  background-color: black;
 }
 
 .appleclone {
-    background-color: rgb(77, 74, 74);
+  background-color: rgb(77, 74, 74);
 }
 
 .natours {
-    background-color: #28b485;
+  background-color: #28b485;
 }

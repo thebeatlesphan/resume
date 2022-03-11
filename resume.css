@@ -5,8 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: none;
-
-  --header-bg-color: rgba(73, 73, 73, 0.096);
+  --header-bg-color: rgb(243, 243, 243);
   --header-text-color: rgb(54, 53, 53);
   --header-padding: 0 2rem;
 }
@@ -44,6 +43,7 @@
   height: 3rem;
   background-color: var(--header-bg-color);
   padding: var(--header-padding);
+  border-bottom: 0.1rem solid rgba(192, 192, 192, 0.5);
 }
 
 .brand-logo {
@@ -91,23 +91,71 @@
 
 /* title */
 .intro {
+  text-align: left;
+  position: relative;
+  padding-top: 2rem;
+  margin-top: 2rem;
   white-space: nowrap;
-  text-align: center;
-  height: calc(30vh - 85px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.smiley {
+  position: absolute;
+  opacity: 0.05;
+  max-width: 7rem;
+  z-index: -1;
+  transform: translate(-2rem, -2rem);
 }
 
 .title h1 {
-  font-size: 1.5rem;
+  font-size: clamp(2rem, 10vw, 4rem);
   letter-spacing: 2px;
 }
 
 .title h2 {
-  font-size: 1.1rem;
-  font-style: italic;
+  font-size: clamp(1rem, 5vw, 2rem);
   letter-spacing: 1px;
+}
+
+.title h2 span {
+  color: orange;
+}
+
+/* about me */
+.about-me {
+  color: grey;
+  padding: 1rem;
+}
+
+.about-me span {
+  color: orange;
+}
+
+.about-me div {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 730px) {
+  .about-me {
+    display: flex;
+  }
+}
+
+/* my skills */
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-skills p {
+  color: grey;
+}
+
+.skills-paragraph {
+  padding: 1rem;
+}
+
+.skills div p {
+  padding: 0.2rem;
 }
 
 /* overlay */
@@ -155,28 +203,6 @@
 #close:hover {
   color: black;
   transform: scale(1.15);
-}
-
-/* about me */
-.about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0.8rem;
-  font-style: italic;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-}
-
-.about-me p:last-child {
-  text-align: left;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 2rem;
-  white-space: nowrap;
-  font-weight: 100;
 }
 
 /* contact */
