@@ -25,7 +25,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 95%;
+    width: 60%;
     padding: 0.2rem;
     display: flex;
     flex-wrap: wrap;
@@ -34,15 +34,18 @@
 }
 
 .showcase {
-    height: 8rem;
-    width: 8rem;
+    height: 18rem;
+    width: 18rem;
     background-color: pink;
-    margin: 0.2rem;
+    margin: 0.5rem 0.5rem;
     border-radius: 0.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .showcase:hover,
@@ -52,48 +55,24 @@
 
 .foodcart {
     background-color: maroon;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    font-size: 1.2rem;
 }
 
 .discordbot {
     background-color: rgb(46, 98, 175);
-    color: white;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
 }
 
 .python-scripts {
     background-color: rgb(25, 118, 155);
-    color: rgb(230, 215, 87);
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    font-size: 1.4rem;
 }
 
 .ivondemand {
     background-color: black;
-    color: whitesmoke;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    font-size: 0.9rem;
 }
 
 .appleclone {
     background-color: rgb(77, 74, 74);
-    color: whitesmoke;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    font-size: 1.5rem;
 }
 
 .natours {
     background-color: #28b485;
-    font-family: "Lato", sans-serif;
-    color: whitesmoke;
-    letter-spacing: 0.1rem;
-    font-size: 1.5rem;
 }
