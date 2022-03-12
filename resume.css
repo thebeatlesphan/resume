@@ -11,29 +11,35 @@
   --header-text-color: rgb(54, 53, 53);
   --header-padding: 0 2rem;
   --border-color: rgba(192, 192, 192, 0.5);
+  --title-color: black;
+  --p-color: grey;
 }
 
 .dark,
 .dark * {
   --header-bg-color: rgb(43, 42, 42);
   --header-text-color: rgb(206, 206, 206);
+  --border-color: rgb(243, 243, 243);
+  --title-color: white;
+  --p-color: rgb(236, 233, 233);
 }
 
 .stars {
+  background: url('./images/endless-constellation.svg');
   position: fixed;
   background-attachment: scroll;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  opacity: 0.15;
-  z-index: -1;
+  z-index: -2;
   opacity: 0.04;
 }
 
-.stars img {
-  height: 100vh;
-  width: 100vw;
+.stars.dark {
+  background: none;
+  background-color: rgb(46, 44, 44);;
+  opacity: 1;
 }
 
 .container {
@@ -103,14 +109,19 @@
   padding-top: 2rem;
   margin-top: 2rem;
   white-space: nowrap;
+  color: var(--title-color)
 }
 
 .smiley {
   position: absolute;
-  opacity: 0.05;
+  opacity: 0.1;
   max-width: 7rem;
   z-index: -1;
   transform: translate(-2rem, -2rem);
+}
+
+.smiley.dark {
+  opacity: 0.5;
 }
 
 .title h1 {
@@ -128,8 +139,12 @@
 }
 
 /* about me */
+h2 {
+  color: var(--title-color)
+}
+
 .about-me {
-  color: grey;
+  color: var(--p-color);
   padding: 1rem;
 }
 
@@ -154,7 +169,7 @@
 }
 
 .my-skills p {
-  color: grey;
+  color: var(--p-color);
 }
 
 .skills-paragraph {

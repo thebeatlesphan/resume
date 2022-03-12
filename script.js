@@ -11,7 +11,12 @@
 // const modal = document.getElementsByClassName("modals")
 
 function changeTheme() {
-  var theme = document.querySelector("*");
+  const theme = document.querySelector("*");
+  const background = document.querySelector(".stars")
+  const smiley = document.querySelector(".smiley")
+  console.log(background)
   theme.classList.toggle("dark");
+  background.classList.toggle("dark")
+  smiley.classList.toggle("dark")
   console.log("theme");
 }
