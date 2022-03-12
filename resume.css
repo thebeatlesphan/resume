@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +10,13 @@
   --header-bg-color: rgb(243, 243, 243);
   --header-text-color: rgb(54, 53, 53);
   --header-padding: 0 2rem;
+  --border-color: rgba(192, 192, 192, 0.5);
+}
+
+.dark,
+.dark * {
+  --header-bg-color: rgb(43, 42, 42);
+  --header-text-color: rgb(206, 206, 206);
 }
 
 .stars {
@@ -43,7 +52,7 @@
   height: 3rem;
   background-color: var(--header-bg-color);
   padding: var(--header-padding);
-  border-bottom: 0.1rem solid rgba(192, 192, 192, 0.5);
+  border-bottom: 0.1rem solid var(--border-color);
 }
 
 .brand-logo {
@@ -69,26 +78,24 @@
 
 #nav-icon span {
   position: absolute;
-  width: 100%;
-  height: 0.1rem;
-  user-select: none;
-  background-color: var(--header-text-color);
+  top: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 5rem;
+  border: 0.15rem solid var(--header-text-color);
 }
 
-#nav-icon span:nth-child(1) {
-  top: 10px;
-}
-#nav-icon span:nth-child(2) {
-  top: 17px;
-}
-#nav-icon span:nth-child(3) {
-  top: 24px;
-}
-#nav-icon span:nth-child(4) {
-  top: 32px;
+#nav-icon span::after {
+  content: "";
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  border: 0.15rem solid var(--header-text-color);
 }
 
+@keyframes moon {
+}
 /* title */
 .intro {
   text-align: left;
@@ -210,7 +217,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  border-top: 0.1rem solid rgba(192, 192, 192, 0.5);
+  border-top: 0.1rem solid var(--border-color);
   display: flex;
   flex-direction: column;
   padding: 0.1rem 0;
