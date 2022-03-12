@@ -28,73 +28,67 @@
 }
 
 .showcase {
-  height: 8rem;
-  width: 18rem;
-  background-color: pink;
+  height: 24rem;
+  width: 100%;
   margin: 0.5rem 0.5rem;
-  border-radius: 0.3rem;
+  border-radius: 0.1rem;
+}
+
+.showcase .snippet {
+  height: 70%;
+  width: 100%;
+  border: 0.1rem solid black;
+  background-color: whitesmoke;
+}
+
+.showcase .info {
+  width: 100%;
+  height: 30%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 1rem;
+}
+
+.info h3 {
+  color: var(--title-color);
+}
+
+.info p {
+  color: var(--p-color);
+}
+
+.info a {
+  color: var(--title-color);
+  text-decoration: none;
+  font-size: 0.7rem;
 }
 
 @media screen and (min-width: 600px) {
   .display {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    padding: 0.2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .showcase {
-    height: 18rem;
-    width: 18rem;
-    background-color: pink;
-    margin: 0.5rem 0.5rem;
-    border-radius: 0.3rem;
+    width: 40%;
+  }
+
+  .showcase .snippet {
+    height: 70%;
+    width: 100%;
+    border: 0.1rem solid black;
+    background-color: whitesmoke;
+  }
+
+  .showcase .info {
+    width: 100%;
+    height: 30%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 1rem;
   }
 }
 
-.showcase:hover,
-.showcase:active {
-  transform: scale(1.1);
-}
-
-.foodcart {
-  background-color: maroon;
-}
-
-.discordbot {
-  background-color: rgb(46, 98, 175);
-}
-
-.python-scripts {
-  background-color: rgb(25, 118, 155);
-}
-
 .ivondemand {
-  background-color: black;
-}
-
-.appleclone {
-  background-color: rgb(77, 74, 74);
-}
-
-.natours {
-  background-color: #28b485;
 }

@@ -18,10 +18,10 @@
 .dark,
 .dark * {
   --header-bg-color: rgb(43, 42, 42);
-  --header-text-color: rgb(206, 206, 206);
+  --header-text-color: rgb(255, 255, 255);
   --border-color: rgb(243, 243, 243);
-  --title-color: white;
-  --p-color: rgb(236, 233, 233);
+  --title-color: rgb(248, 233, 233);
+  --p-color: rgb(247, 245, 245);
 }
 
 .stars {
@@ -121,7 +121,7 @@
 }
 
 .smiley.dark {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .title h1 {
@@ -178,53 +178,6 @@ h2 {
 
 .skills div p {
   padding: 0.2rem;
-}
-
-/* overlay */
-#overlay {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-color: rgba(235, 184, 5, 255);
-  transition: 0.5s;
-}
-
-#topics {
-  width: 100%;
-}
-
-#overlay div a {
-  display: flex;
-  text-decoration: none;
-  font-size: 4rem;
-  color: white;
-  justify-content: center;
-}
-
-#overlay div a:hover {
-  transform: scale(1.15);
-  color: black;
-}
-
-#close {
-  color: white;
-  top: 1.3rem;
-  right: 3rem;
-  position: absolute;
-  font-size: 3rem;
-  cursor: pointer;
-}
-
-#close:hover {
-  color: black;
-  transform: scale(1.15);
 }
 
 /* contact */
