@@ -28,3 +28,20 @@ function offHover(number) {
   toProject.style.textDecoration = "none"
   snippet.style.transform = "scale(1)"
 }
+
+//modal
+const modalParent = document.getElementsByClassName("modal")
+const modal = modalParent[0].children
+console.log(modalParent[0])
+
+function showModal(number) {
+  modalParent[0].style.display = "flex"
+  modal[number].style.display = "block";
+  console.log("hiii")
+}
+
+window.onclick = function(e) {
+  if (e.target == modalParent[0]) {
+    modalParent[0].style.display = "none"
+  } 
+}

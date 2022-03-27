@@ -91,17 +91,16 @@
         <div class="container-projects">
           <h2>Projects</h2>
           <div class="display">
-
-            <div class="showcase ivondemand" onmouseover="onHover(0)" onmouseout="offHover(0)">
+            <div class="showcase ivondemand" onmouseover="onHover(0)" onmouseout="offHover(0)"  onclick="showModal(0)">
               <div class="snippet"></div>
               <div class="info">
                 <h3>IVonDemand</h3>
                 <p>A premium concierge app service for that needle dawg.</p>
-                <a href="">VIEW PROJECT</a>
+                <a href="https://thebeatlesphan.github.io/react-iv/">VIEW PROJECT</a>
               </div>
             </div>
 
-            <div class="showcase ivondemand" onmouseover="onHover(1)" onmouseout="offHover(1)"">
+            <div class="showcase market" onmouseover="onHover(1)" onmouseout="offHover(1)"  onclick="showModal(1)">
               <div class="snippet"></div>
               <div class="info">
                 <h3>Market Analysis</h3>
@@ -114,6 +113,11 @@
         </div>
       </section>
     </div>
+
+    <section class="modal">
+      <div class="modal-body ivondemand">hello</div>
+      <div class="modal-body market">hello</div>
+    </section>
   </body>
 
   <!-- contact -->

@@ -66,6 +66,7 @@
   text-decoration: none;
   font-size: 1.7rem;
   color: var(--header-text-color);
+  cursor: default;
 }
 
 .logo {
