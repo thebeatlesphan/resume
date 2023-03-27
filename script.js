@@ -10,38 +10,29 @@ function changeTheme() {
 }
 
 //mouseover projects
-const display = document.getElementsByClassName("display");
-const projects = display[0].children;
+const projectSection = document.getElementsByClassName("display");
+const projects = projectSection[0].children;
 
 function onHover(number) {
-  const snippet = projects[number].children[0];
-  const toProject = projects[number].children[1].children[2];
+  const projectBackground = projects[number];
+  const projectImg = projects[number].children[0];
+  const projectContent = projects[number].children[1];
 
-  toProject.style.textDecoration = "underline";
-  snippet.style.transform = "scale(1.03)";
+  projectBackground.style.backgroundColor = "white";
+  projectImg.style.display = "none";
+  projectContent.style.opacity = "1";
 }
 
 function offHover(number) {
-  const snippet = projects[number].children[0];
-  const toProject = projects[number].children[1].children[2];
-
-  toProject.style.textDecoration = "none";
-  snippet.style.transform = "scale(1)";
+  const projectBackground = projects[number];
+  const originalBackgroundColor = projectBackground.getAttribute(
+    "data-original-background-color"
+  );
+  const projectImg = projects[number].children[0];
+  const projectContent = projects[number].children[1];
+  projectBackground.style.backgroundColor = originalBackgroundColor;
+  
+  projectImg.style.display = "block";
+  projectContent.style.opacity = "0";
+  projectBackground.style.background = "original color";
 }
-
-//modal
-const modalParent = document.getElementsByClassName("modal");
-const modal = modalParent[0].children;
-
-function showModal(number) {
-  modalParent[0].style.display = "flex";
-  modal[number].style.display = "block";
-}
-
-window.onclick = function(e) {
-  if (e.target == modalParent[0]) {
-    modalParent[0].style.display = "none";
-    modal[0].style.display = "none";
-    modal[1].style.display = "none";
-  }
-};

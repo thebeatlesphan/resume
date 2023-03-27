@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="resume.css" rel="stylesheet" />
     <link href="projects.css" rel="stylesheet" />
-    <link href="modals.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,47 +35,53 @@
         <img class="smiley" src="./images/smiley.png" />
         <div class="title">
           <h1>Hi! I'm Andy</h1>
-          <h2>an aspiring <span>Junior Developer</span></h2>
+          <h2>Fullstack <span>Developer</span></h2>
         </div>
       </section>
 
+      <!-- ABOUT ME -->
       <section class="about-me">
         <div class="first">
-          <p>I am currently studying web development and automation.</p>
+          <p>
+            I am incredibly excited about the prospect of working in
+            development!
+          </p>
           <br />
           <p>
-            As a tech enthusiast, I strive to incorporate programming into my
-            professional and everyday life.
+            As a tech enthusiast, I am eager to turn my love for programming
+            into a fulfilling career as a developer. I thrive on the challenge
+            of solving complex problems and enjoy collaborating with others to
+            achieve shared goals.
           </p>
         </div>
         <div class="second">
           <p>
-            Contributing to <span>Open Source Projects</span> and collaborating
-            with friends has been such a rewarding and fruitful experience. I
-            hope to work with more creative and ambitious individuals.
+            My experience contributing to <span>Open Source Projects</span> and
+            working with friends has taught me the value of teamwork and has
+            honed my skills in full-stack development. i have developed a
+            versatile skillset that includes computer science, problem-solving,
+            and design. I am excited to apply my skills and knowledge to a
+            dynamic and creative team, where I can continue to learn and grow as
+            a developer while making meaningful contributions to the industry.
           </p>
         </div>
       </section>
 
+      <!-- MY SKILLS -->
       <section class="my-skills">
         <div>
-          <h2>My Skills</h2>
-          <p class="skills-paragraph">
-            Through self-study and my many mentors, I'm learning to become a
-            versatile full-stack developer. I dedicate a lot of my free time to
-            hone my computer science, problem solving, and design skills.
-          </p>
+          <h2>TECH STACK</h2>
           <div class="skills">
             <div>
-              <p>Javascript ES6</p>
-              <p>HTML & CSS</p>
+              <p>MERN</p>
+              <p>Firebase</p>
             </div>
             <div>
-              <p>React</p>
               <p>Python</p>
+              <p>Bash</p>
             </div>
             <div>
-              <p>Node.js</p>
+              <p>SQL</p>
               <p>Git</p>
             </div>
           </div>
@@ -84,72 +89,94 @@
         <div></div>
       </section>
 
-      <!-- projects -->
+      <!-- PROJECTS -->
       <section class="projects" id="projects">
         <div class="container-projects">
           <h2>Projects</h2>
           <div class="display">
+            <!-- IVonDemand -->
             <div
               class="showcase ivondemand"
+              data-original-background-color="#c1c8d2"
               onmouseover="onHover(0)"
               onmouseout="offHover(0)"
-              <!--
-              onclick="showModal(0)"
-              --
             >
-              <div class="snippet"></div>
-              <div class="info">
-                <h3>IVonDemand</h3>
-                <p>A premium concierge app service created in React.</p>
-                <a
-                  href="https://thebeatlesphan.github.io/react-iv/"
-                  target="_blank"
-                  >VIEW PROJECT</a
-                >
+              <img
+                src="./ivondemand/ivondemand.png"
+                alt="ivondemand logo"
+                height="250"
+                width="250"
+              />
+              <div class="project-content">
+                <div class="project-content-hover">
+                  <p>IVonDemand</p>
+                  <p>MERN</p>
+                  <div class="project-content-button">
+                    <a>SITE</a>
+                    <a href="https://github.com/thebeatlesphan/react-iv"
+                      >REPO</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
 
+            <!-- Tien Len -->
             <div
-              class="showcase market"
+              class="showcase tienlen"
               onmouseover="onHover(1)"
               onmouseout="offHover(1)"
-              onclick="showModal(1)"
             >
-              <div class="snippet"></div>
-              <div class="info">
-                <h3>Tien Len</h3>
-                <p>Vietnamese card game created in React.</p>
-                <a
-                  href="https://thebeatlesphan.github.io/tien-len"
-                  target="_blank"
-                  >VIEW PROJECT</a
-                >
+              <img
+                src="./tien-len/tienlen.png"
+                alt="tien len logo"
+                height="250"
+                width="250"
+              />
+              <div class="project-content">
+                <div class="project-content-hover">
+                  <p>Tien Len</p>
+                  <p>MERN</p>
+                  <div class="project-content-button">
+                    <a>SITE</a>
+                    <a href="https://github.com/thebeatlesphan/TienLenAPI"
+                      >REPO</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fuchsia-Cuttlefish -->
+            <div
+              class="showcase fuchsia"
+              onmouseover="onHover(2)"
+              onmouseout="offHover(2)"
+            >
+              <img
+                src="./fuchsia-cuttlefish/favicon.ico"
+                alt="Fuchsia-Cuttlefish-Chat-App Logo"
+                height="250"
+                width="250"
+              />
+              <div class="project-content">
+                <div class="project-content-hover">
+                  <p>Fuchsia-Cuttlefish-Chat-App</p>
+                  <p>Firebase React</p>
+                  <div class="project-content-button">
+                    <a>SITE</a>
+                    <a
+                      href="https://github.com/Hack-Weekly/fuchsia-cuttlefish-chat-app"
+                      >REPO</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-
-    <section class="modal">
-      <div class="modal-body ivondemand">
-        <h2 class="title">IVonDemand</h2>
-        <p class="details">
-          Frontend project that focuses on a pixel perfect creation of a Product
-          Designer's idea.
-        </p>
-        <ul>
-          <li>React</li>
-        </ul>
-      </div>
-      <div class="modal-body market">
-        <h2>Tien Len</h2>
-        <p>Interactive Vietnamese card game created entirely in React.</p>
-        <ul>
-          <li>React</li>
-        </ul>
-      </div>
-    </section>
   </body>
 
   <!-- contact -->
