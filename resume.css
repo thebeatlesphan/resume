@@ -140,7 +140,7 @@
 }
 
 /* about me */
-h2 {
+h3 {
   color: var(--title-color)
 }
 
@@ -163,7 +163,7 @@ h2 {
   }
 }
 
-/* my skills */
+/* tech stack */
 .skills {
   display: flex;
   justify-content: space-around;
@@ -180,6 +180,8 @@ h2 {
 .skills div p {
   padding: 0.2rem;
 }
+
+/* blog */
 
 /* contact */
 .footer {
