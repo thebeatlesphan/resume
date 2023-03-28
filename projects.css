@@ -60,6 +60,12 @@
   flex-direction: column;
 }
 
+.project-content-hover h3 {
+  text-align: center;
+  color: orange;
+  letter-spacing: 2px;;
+}
+
 .project-content-hover p {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -72,9 +78,10 @@
 
 .project-content-button {
   text-align: center;
+  margin-top: 16px;
 }
 
-.project-content a {
+.project-content-hover a {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
@@ -90,7 +97,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-right: 12px;
+  margin: 16px;
 }
 
 .project-content a:active {
@@ -101,12 +108,15 @@
 
 .showcase.ivondemand {
   background-color: #c1c8d2;
+  border: 1px solid #c1c8d2;
 }
 
 .showcase.tienlen {
   background-color: #844034;
+  border: 1px solid #844034;
 }
 
 .showcase.fuchsia {
   background-color: #ea0385;
+  border: 1px solid #ea0385;
 }
